@@ -22,7 +22,7 @@ public static void main(String[] args) throws Exception {
 
 public static void screenShot(WebDriver driver) throws IOException, InterruptedException {
     File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-    File dest = new File("C:/Users/dayan/screenshot_" + timestamp() + ".png");
+    File dest = new File("C:/Users/isaac/screenshot_" + timestamp() + ".png");
     FileUtils.copyFile(scr, dest);
     Thread.sleep(3000);
 }
